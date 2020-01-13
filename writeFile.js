@@ -6,7 +6,7 @@ const readline = require('readline').createInterface({
 const fs = require('fs');
 
 
-readline.question(`What is the text you would like to save?`, (text) => {
+readline.question(`What is your primary goal today? `, (text) => {
   fs.writeFile('Output.txt', text, (err) => {
 
     // In case of a error throw err. 
